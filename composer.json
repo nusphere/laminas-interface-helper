@@ -1,0 +1,19 @@
+{
+  "name": "nubox/laminas-interface-helper",
+  "description": "",
+  "authors": [
+    {
+      "name": "Sebastian Hopfe",
+      "email": "nusphere83@gmail.com"
+    }
+  ],
+  "require": {
+    "php": "~8.1.0 || ~8.2.0 || ~8.3.0",
+    "symfony/finder": "*"
+  },
+  "autoload": {
+    "psr-4": {
+      "\\Laminas\\Interface\\Helper\\": "src"
+    }
+  }
+}

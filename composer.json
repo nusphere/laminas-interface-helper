@@ -9,11 +9,27 @@
   ],
   "require": {
     "php": "~8.1.0 || ~8.2.0 || ~8.3.0",
-    "symfony/finder": "*"
+    "laminas/laminas-modulemanager": "*",
+    "laminas/laminas-db": "*",
+    "laminas/laminas-i18n": "*",
+    "laminas/laminas-filter": "*"
+  },
+  "require-dev": {
+    "roave/security-advisories": "dev-latest",
+    "laminas/laminas-test": "^4.10"
   },
   "autoload": {
     "psr-4": {
-      "\\Laminas\\Interface\\Helper\\": "src"
+      "Laminas\\Interface\\Helper\\": "src"
     }
+  },
+  "autoload-dev": {
+    "psr-4": {
+      "Laminas\\Interface\\Helper\\Functional\\Test\\": "tests/Functional",
+      "Laminas\\Interface\\Helper\\Unit\\Test\\": "tests/Unit"
+    }
+  },
+  "scripts": {
+    "test": "phpunit"
   }
 }
